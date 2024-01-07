@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color:slategray;
+}
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input[type=text], input[type=email], input[type=password], select, textarea {
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    background-color:midnightblue;
+    color:burlywood;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.radio {
+    margin-top: 10px;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.upload-picture {
+    margin-top: 10px;
+}
+.upload-picture input[type=file] {
+    padding: 6px;
+}
+</style>
+</head>
+<body>
+    <h1 style="text-align: center;">Registration Form</h1>
+    <p style="text-align: center;">Plese fill out this form with the required information</p>
+
+<form action="">
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname">
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="pwd">Create a New Password:</label>
+    <input type="password" id="pwd" name="pwd">
+
+    <label for="account-type">Account Type:</label>
+    <input type="radio" id="personal" name="account-type" value="personal">
+    <label for="personal">Personal Account</label><br>
+    <input type="radio" id="business" name="account-type" value="business">
+    <label for="business">Business Account</label><br>
+
+    <input type="checkbox" id="terms" name="terms" value="agree">
+    <label for="terms"> I accept the terms and conditions</label><br>
+
+    <div class="upload-picture">
+        <label for="profile-pic">Upload a profile picture:</label>
+        <input type="file" id="profile-pic" name="profile-pic">
+    </div>
+
+    <label for="age">Input your age (years):</label>
+    <input type="text" id="age" name="age">
+
+    <label for="hear-about">How did you hear about us?</label>
+    <select id="hear-about" name="hear-about">
+        <option value="friend">Friend</option>
+        <option value="socialmedia">Social Media</option>
+        <option value="ads">Ads</option>
+    </select>
+
+    <label for="bio">Provide a bio:</label>
+    <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+
+    <input type="submit" value="Submit Registration Form">
+</form>
+
+</body>
+</html>
